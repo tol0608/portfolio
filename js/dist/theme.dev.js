@@ -254,20 +254,57 @@
       }]
     });
   } // 팝업 시작
+  // $(function(){
+  // 	$(".img-fluid").click(function(){
+  // 		modalClose(); //모달 닫기 함수 호출
+  // 		//컨펌 이벤트 처리
+  // 	});
+  // 	$("#modal-open").click(function(){        
+  // 		$("#popup_box").css('display','flex').hide().fadeIn();
+  // 		//팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fadeIn()으로 효과
+  // 	});
+  // 	$(".img-fluid").click(function(){
+  // 		modalClose(); //모달 닫기 함수 호출
+  // 	});
+  // 	function modalClose(){
+  // 		$("#popup_box").fadeOut(); //페이드아웃 효과
+  // 	}
+  //   });
+
+})(jQuery); // $(function(){
+// 	$('.popup_a').each(function () {
+// 		$(this).click(function (event) {
+// 			event.preventDefault()
+// 			var img_src = $(this).attr('href');
+// 			$('#modal').fadeIn();
+// 			$('#modal img').attr('src', img_src);
+// 			// $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
+// 		})
+// 	})
+// 	$("#modal button,#modal").click(function () {
+// 		$("#modal").fadeOut();
+// 	});
+// 	// 팝업 끝
+// 	$('.non_act').click(function () {
+// 		return false;
+// 	});
+// })
 
 
-  $(function () {
-    $('.img-fluid').click(function () {
-      $('#jh_pop').fadeIn();
-    });
-    $('#jh_pop').click(function () {
-      $('#jh_pop').fadeOut();
-    });
-  }); // 팝업 끝
-
-  $(function () {
-    $('.non_act').click(function () {
-      return false;
+$(function () {
+  $('.popup_a').each(function () {
+    $(this).click(function (event) {
+      event.preventDefault();
+      var img_src = $(this).attr('href');
+      $('#modal').addClass('pop_open');
+      $('#modal img').attr('src', img_src); // $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
     });
   });
-})(jQuery);
+  $("#modal button,#modal").click(function () {
+    $("#modal").removeClass();
+  }); // 팝업 끝
+
+  $('.non_act').click(function () {
+    return false;
+  });
+});

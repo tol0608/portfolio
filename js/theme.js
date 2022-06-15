@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 	'use strict';
 
 	var nav_offset_top = $('header').height() + 50;
@@ -9,7 +9,7 @@
 	//* Navbar Fixed
 	function navbarFixed() {
 		if ($('.header_area').length) {
-			$(window).scroll(function() {
+			$(window).scroll(function () {
 				var scroll = $(window).scrollTop();
 				if (scroll >= nav_offset_top) {
 					$('.header_area').addClass('navbar_fixed');
@@ -33,8 +33,8 @@
 	/* ---------------------------------------------
             Isotope js Starts
          --------------------------------------------- */
-	$(window).on('load', function() {
-		$('.portfolio-filter ul li').on('click', function() {
+	$(window).on('load', function () {
+		$('.portfolio-filter ul li').on('click', function () {
 			$('.portfolio-filter ul li').removeClass('active');
 			$(this).addClass('active');
 
@@ -119,20 +119,16 @@
 			disableDoubleClickZoom: true,
 			mapTypeControl: false,
 			zoom: $zoom,
-			styles: [
-				{
+			styles: [{
 					featureType: 'water',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
-							color: '#dcdfe6'
-						}
-					]
+					stylers: [{
+						color: '#dcdfe6'
+					}]
 				},
 				{
 					featureType: 'transit',
-					stylers: [
-						{
+					stylers: [{
 							color: '#808080'
 						},
 						{
@@ -143,8 +139,7 @@
 				{
 					featureType: 'road.highway',
 					elementType: 'geometry.stroke',
-					stylers: [
-						{
+					stylers: [{
 							visibility: 'on'
 						},
 						{
@@ -155,17 +150,14 @@
 				{
 					featureType: 'road.highway',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
-							color: '#ffffff'
-						}
-					]
+					stylers: [{
+						color: '#ffffff'
+					}]
 				},
 				{
 					featureType: 'road.local',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
+					stylers: [{
 							visibility: 'on'
 						},
 						{
@@ -179,17 +171,14 @@
 				{
 					featureType: 'road.local',
 					elementType: 'geometry.stroke',
-					stylers: [
-						{
-							color: '#d7d7d7'
-						}
-					]
+					stylers: [{
+						color: '#d7d7d7'
+					}]
 				},
 				{
 					featureType: 'poi',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
+					stylers: [{
 							visibility: 'on'
 						},
 						{
@@ -200,35 +189,28 @@
 				{
 					featureType: 'administrative',
 					elementType: 'geometry',
-					stylers: [
-						{
-							color: '#a7a7a7'
-						}
-					]
+					stylers: [{
+						color: '#a7a7a7'
+					}]
 				},
 				{
 					featureType: 'road.arterial',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
-							color: '#ffffff'
-						}
-					]
+					stylers: [{
+						color: '#ffffff'
+					}]
 				},
 				{
 					featureType: 'road.arterial',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
-							color: '#ffffff'
-						}
-					]
+					stylers: [{
+						color: '#ffffff'
+					}]
 				},
 				{
 					featureType: 'landscape',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
+					stylers: [{
 							visibility: 'on'
 						},
 						{
@@ -239,17 +221,14 @@
 				{
 					featureType: 'road',
 					elementType: 'labels.text.fill',
-					stylers: [
-						{
-							color: '#696969'
-						}
-					]
+					stylers: [{
+						color: '#696969'
+					}]
 				},
 				{
 					featureType: 'administrative',
 					elementType: 'labels.text.fill',
-					stylers: [
-						{
+					stylers: [{
 							visibility: 'on'
 						},
 						{
@@ -260,73 +239,100 @@
 				{
 					featureType: 'poi',
 					elementType: 'labels.icon',
-					stylers: [
-						{
-							visibility: 'off'
-						}
-					]
+					stylers: [{
+						visibility: 'off'
+					}]
 				},
 				{
 					featureType: 'poi',
 					elementType: 'labels',
-					stylers: [
-						{
-							visibility: 'off'
-						}
-					]
+					stylers: [{
+						visibility: 'off'
+					}]
 				},
 				{
 					featureType: 'road.arterial',
 					elementType: 'geometry.stroke',
-					stylers: [
-						{
-							color: '#d6d6d6'
-						}
-					]
+					stylers: [{
+						color: '#d6d6d6'
+					}]
 				},
 				{
 					featureType: 'road',
 					elementType: 'labels.icon',
-					stylers: [
-						{
-							visibility: 'off'
-						}
-					]
+					stylers: [{
+						visibility: 'off'
+					}]
 				},
 				{},
 				{
 					featureType: 'poi',
 					elementType: 'geometry.fill',
-					stylers: [
-						{
-							color: '#dadada'
-						}
-					]
+					stylers: [{
+						color: '#dadada'
+					}]
 				}
 			]
 		});
 	}
 
-// 팝업 시작
-	$(function(){
-		$('.img-fluid').click(function(){
-			$('#jh_pop').fadeIn()
-		})
-		$('#jh_pop').click(function(){
-			$('#jh_pop').fadeOut()
-		})
-		
-	})
-// 팝업 끝
-	$(function(){
-		$('.non_act').click(function () {return false;});
-	})
+	// 팝업 시작
+	// $(function(){
+	// 	$(".img-fluid").click(function(){
+	// 		modalClose(); //모달 닫기 함수 호출
+
+	// 		//컨펌 이벤트 처리
+	// 	});
+	// 	$("#modal-open").click(function(){        
+	// 		$("#popup_box").css('display','flex').hide().fadeIn();
+	// 		//팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fadeIn()으로 효과
+	// 	});
+	// 	$(".img-fluid").click(function(){
+	// 		modalClose(); //모달 닫기 함수 호출
+	// 	});
+	// 	function modalClose(){
+	// 		$("#popup_box").fadeOut(); //페이드아웃 효과
+	// 	}
+	//   });
+	
 })(jQuery);
 
+// $(function(){
+// 	$('.popup_a').each(function () {
+// 		$(this).click(function (event) {
+// 			event.preventDefault()
+// 			var img_src = $(this).attr('href');
+// 			$('#modal').fadeIn();
+// 			$('#modal img').attr('src', img_src);
+// 			// $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
+// 		})
+// 	})
+// 	$("#modal button,#modal").click(function () {
+// 		$("#modal").fadeOut();
+// 	});
+// 	// 팝업 끝
 
+// 	$('.non_act').click(function () {
+// 		return false;
+// 	});
+// })
 
+$(function(){
+	$('.popup_a').each(function () {
+		$(this).click(function (event) {
+			event.preventDefault()
+			var img_src = $(this).attr('href');
+			$('#modal').addClass('pop_open');
+			$('#modal img').attr('src', img_src);
+			// $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
+		})
+	})
+	$("#modal button,#modal").click(function () {
+		$("#modal").removeClass();
+	});
+	// 팝업 끝
 
-
-
-
-
+	$('.non_act').click(function () {
+		return false;
+	});
+})

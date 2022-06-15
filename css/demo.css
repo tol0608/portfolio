@@ -1243,7 +1243,7 @@ Author E-mail: naimlasker@gmail.com
 	font-family: 'Gmarket_sans';
 }
 
-.blog_area .sub-title h2{
+.blog_area .sub-title h2 {
 	margin-bottom: 20px;
 	font-weight: 600;
 	transition: all 0.3s linear;
@@ -1255,43 +1255,52 @@ Author E-mail: naimlasker@gmail.com
 }
 
 .blog_info .blog_meta li a {
-    font-family: 'Gmarket_sans';
+	font-family: 'Gmarket_sans';
 	color: #fff;
-    vertical-align: middle;
-    padding-bottom: 12px;
-    display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 12px;
+	display: inline-block;
 }
+
 .blog_info .blog_meta li a:hover {
-	color:#6314e0;
+	color: #6314e0;
 }
 
 .blog_post .primary_btn {
-    display: inline-block;
-    color: #fff;
-    letter-spacing: 0px;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 46px;
-    outline: none !important;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: double 2px transparent;
-    box-shadow: 0px 10px 30px rgb(118 85 225 / 30%);
+	display: inline-block;
+	color: #fff;
+	letter-spacing: 0px;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 46px;
+	outline: none !important;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+	border: double 2px transparent;
+	box-shadow: 0px 10px 30px rgb(118 85 225 / 30%);
 	padding: 3px 20px;
 	transition: all 0.3s linear;
+	position: absolute;
+	left: -26%;
+	top: 50%;
+}
+.blog_post .style_guide {
+	position: absolute;
+	left: -26%;
+	top: 60%;
 }
 
 .blog_post .primary_btn:hover {
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: 2px solid #854fee;
-    color: #222222;
-    box-shadow: none;
-    background-clip: border-box;
+	background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+	border: 2px solid #854fee;
+	color: #222222;
+	box-shadow: none;
+	background-clip: border-box;
 }
 
 .blog_details {
@@ -1299,11 +1308,11 @@ Author E-mail: naimlasker@gmail.com
 }
 
 .blog_details h2 {
-    cursor: default;
+	cursor: default;
 }
 
 .blog_details h2:hover {
-    color: #6314e0;
+	color: #6314e0;
 }
 
 .blog_meta li {
@@ -1318,5 +1327,109 @@ Author E-mail: naimlasker@gmail.com
 	padding: 0px 5px;
 	line-height: 2;
 }
+
+/* 모달팝업 */
+#modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left:0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 9999;
+	transform: scale(0);
+	overflow: hidden;
+	transition: 0.7s;
+}
+
+#modal:hover {
+	overflow-y:scroll;
+}
+
+#modal .body {
+	padding-top: 10%;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	/*opacity: 0;*/
+	transform: translate(-50%, 0);
+	background: none;
+	overflow: hidden;
+}
+
+#modal .body img {
+	display: block;
+	margin-bottom: 20px;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#modal .body .button {
+	margin-top: 50px;
+	text-align: center;
+	position: absolute;
+	right: -56px;
+	top: 0;
+}
+
+#modal .body .button button {
+	padding: 6px 12px;
+	border: none;
+	border-radius: 6px;
+	background: #6314e0;
+	color: white;
+}
+
+#modal.pop_open {
+	transform: scale(1);
+}
+
+@media (max-width: 1920px) {
+	.blog_post .primary_btn {
+		position: absolute;
+		left: -26%;
+		top: 30%;
+	}
+	
+	.blog_post .style_guide {
+		position: absolute;
+		left: -26%;
+		top: 40%;
+	}
+}
+
+@media (max-width: 991px) {
+	.blog_post .primary_btn {
+		position: absolute;
+		left: -26%;
+		top: 50%;
+	}
+	
+	.blog_post .style_guide {
+		position: absolute;
+		left: -26%;
+		top: 60%;
+	}
+}
+
+@media (max-width: 767px) {
+	.blog_post .primary_btn {
+		position: absolute;
+		left: 5%;
+		top: -15%;
+		font-size: 1rem;
+		padding: 0px 5px;
+	}
+	
+	.blog_post .style_guide {
+		position: absolute;
+		left: 5%;
+		top: -25%;
+		font-size: 1rem;
+		padding: 0px 5px;
+	}
+}
+
 
 /*# sourceMappingURL=style.css.map */

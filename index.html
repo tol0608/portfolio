@@ -34,9 +34,13 @@
 </head>
 
 <body class="demo loading">
-	<div id="jh_pop"
-		style="position:fixed;width:100%;height:100%;background-color:rgba(255,0,0,0.9);z-index:9999;display:none">
-	</div>
+	<div id="modal">
+        <div class="body">
+                <img src="test.jpg">
+                <p class="txt"></p>
+            <div class="button"><button type="button" id="btn-close">닫기</button></div>
+        </div>
+    </div>
 	<svg class="hidden">
 		<symbol id="icon-arrow" viewBox="0 0 24 24">
 			<title>arrow</title>
@@ -124,13 +128,14 @@
 								<li data-filter=".variation">variation</li>
 							</ul>
 						</div>
+						
 						<div class="filters-content">
 							<div class="row portfolio-grid justify-content-center">
-								<div class="col-lg-4 col-md-6 all poster">
+								<div class="col-lg-4 col-md-6 all poster popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/barbershop.jpg"
-												alt="barbershop image">
+											<a href="01_graphic/barbershop.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/barbershop.jpg"
+												alt="barbershop image"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -139,11 +144,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all popup">
+								<div class="col-lg-4 col-md-6 all popup popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/dermatology.jpg"
-												alt="dermatology image">
+											<a href="01_graphic/dermatology.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/dermatology.jpg"
+												alt="dermatology image"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -152,11 +157,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all banner">
+								<div class="col-lg-4 col-md-6 all banner popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/dentist01.jpg"
-												alt="dentist image1">
+											<a href="01_graphic/dentist01.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/dentist01.jpg"
+												alt="dentist image1"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -165,11 +170,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all banner">
+								<div class="col-lg-4 col-md-6 all banner popup_box" >
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/dentist02.jpg"
-												alt="dentist image2">
+											<a href="01_graphic/dentist02.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/dentist02.jpg"
+												alt="dentist image2"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -178,10 +183,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all banner">
+								<div class="col-lg-4 col-md-6 all banner popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/latte.jpg" alt="latte image">
+											<a href="01_graphic/latte.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/latte.jpg" alt="latte image"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -190,10 +195,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all popup">
+								<div class="col-lg-4 col-md-6 all popup popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/rapha.jpg" alt="rapha image">
+											<a href="01_graphic/rapha.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/rapha.jpg" alt="rapha image"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -202,11 +207,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all upcoming variation">
+								<div class="col-lg-4 col-md-6 all upcoming variation popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/gnm_1080X490.jpg"
-												alt="gnm image1">
+											<a href="01_graphic/gnm_1080X490.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/gnm_1080X490.jpg"
+												alt="gnm image1"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -215,11 +220,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all variation">
+								<div class="col-lg-4 col-md-6 all variation popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/gnm_300x600.jpg"
-												alt="gnm image2">
+											<a href="01_graphic/gnm_300x600.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/gnm_300x600.jpg"
+												alt="gnm image2"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -228,11 +233,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-6 all variation">
+								<div class="col-lg-4 col-md-6 all variation popup_box">
 									<div class="portfolio_box">
 										<div class="single_portfolio">
-											<img class="img-fluid w-100" src="01_graphic/gnm_300X300.jpg"
-												alt="gnm image3">
+											<a href="01_graphic/gnm_300x300.jpg" class="popup_a"><img class="img-fluid w-100" src="01_graphic/gnm_300X300.jpg"
+												alt="gnm image3"></a>
 											<div class="overlay"></div>
 										</div>
 										<div class="short_info">
@@ -250,7 +255,7 @@
 			<!--================End Portfolio Area =================-->
 			<!--================End Portfolio Area =================-->
 			<!--================End Portfolio Area =================-->
-			<div class="content__section" data-bgcolor="#111">
+			<div class="content__section" data-bgcolor="#bbb">
 				<h2 class="content__text">WEB</h2>
 				<section class="blog_area">
 					<div class="container">
@@ -280,8 +285,7 @@
 													<p>누구나 나드리에 대한 좋은 기억이 있습니다. <br>
 														소풍전날 들떠 쉽게 잠들지 않았던 기억 여러분은 없으신가요? <br>
 														경북에 있는 각종명소를 소개하는 페이지를 현재보다 트렌디하게 디자인 해보았습니다.</p>
-													<a href="02_web/nadri/index.html" class="primary_btn" target="_blank"><span>View
-															More</span></a>
+													<a href="02_web/nadri/index.html" class="primary_btn" target="_blank"><span>HOMEPAGE</span></a>
 												</div>
 											</div>
 										</div>
@@ -311,8 +315,8 @@
 													<p>취미활동은 우리의 삶에 활력을 불어넣어 줍니다.<br>
 													그 중 사이클이라는 취미는 재미를 넘어서 건강까지 챙길 수 있는 건전한 취미입니다. <br>
 													"세월이 지나도 가치는 변하지 않는다"는 철학을 가진 Argon18의 홈페이지를 정열적으로 디자인 했습니다.</p>
-													<a href="02_web/argon18/index.html" class="primary_btn" target="_blank"><span>View
-															More</span></a>
+													<a href="02_web/argon18/Argon18_styleguide.jpg" class="primary_btn popup_a style_guide" ><span>Style Guide</span></a>
+													<a href="02_web/argon18/index.html" class="primary_btn" target="_blank"><span>HOMEPAGE</span></a>
 												</div>
 											</div>
 										</div>
@@ -343,8 +347,7 @@
 													그 이상의 정제된 향을 나의 공간에서 즐길 수 있습니다.<br>
 													인센스스틱 판매 페이지 '휴식'을 릴렉스하게 디자인 했습니다.
 													</p>
-													<a href="http://tol0608.cafe24.com" class="primary_btn" target="_blank"><span>View
-															More</span></a>
+													<a href="http://tol0608.cafe24.com" class="primary_btn" target="_blank"><span>HOMEPAGE</span></a>
 												</div>
 											</div>
 										</div>
@@ -395,7 +398,7 @@
 			<!---------------------- 항목 추가 시 사용할 코드 끝 ---------------------->
 			<!---------------------- 항목 추가 시 사용할 코드 끝 ---------------------->
 			<!---------------------- 항목 추가 시 사용할 코드 끝 ---------------------->
-			<div class="content__section" data-bgcolor="#854fee">
+			<div class="content__section" data-bgcolor="#000">
 				<h2 class="content__text">It's Me.</h2>
 				<div class="content__contact">
 					<a href="#">Name : 이재현 <br></a>
