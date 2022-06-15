@@ -207,7 +207,7 @@ Author E-mail: naimlasker@gmail.com
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: #222222;
+	color: #dddddd;
 	cursor: pointer;
 	-webkit-transition: all 0.4s ease 0s;
 	-moz-transition: all 0.4s ease 0s;
@@ -1234,6 +1234,7 @@ Author E-mail: naimlasker@gmail.com
 
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
+
 .portfolio_area .main_title h2 {
 	font-family: 'Gmarket_sans';
 	font-weight: 600;
@@ -1338,8 +1339,9 @@ Author E-mail: naimlasker@gmail.com
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 9999;
 	transform: scale(0);
+	/* display: none; */
 	overflow: hidden;
-	transition: 0.7s;
+	transition: 0.3s;
 }
 
 #modal:hover {
@@ -1427,6 +1429,23 @@ Author E-mail: naimlasker@gmail.com
 		left: 5%;
 		top: -25%;
 		font-size: 1rem;
+		padding: 0px 5px;
+	}
+}
+
+@media (max-width: 321px) {
+	.content .info {
+		font-size: 1.3rem;
+	}
+	.blog_post .primary_btn {
+		position: relative;
+		font-size: 0.3rem;
+		padding: 0px 5px;
+	}
+	
+	.blog_post .style_guide {
+		position: relative;
+		font-size: 0.3rem;
 		padding: 0px 5px;
 	}
 }

@@ -271,40 +271,39 @@
   // 	}
   //   });
 
-})(jQuery); // $(function(){
-// 	$('.popup_a').each(function () {
-// 		$(this).click(function (event) {
-// 			event.preventDefault()
-// 			var img_src = $(this).attr('href');
-// 			$('#modal').fadeIn();
-// 			$('#modal img').attr('src', img_src);
-// 			// $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
-// 		})
-// 	})
-// 	$("#modal button,#modal").click(function () {
-// 		$("#modal").fadeOut();
-// 	});
-// 	// 팝업 끝
-// 	$('.non_act').click(function () {
-// 		return false;
-// 	});
-// })
-
+})(jQuery);
 
 $(function () {
   $('.popup_a').each(function () {
     $(this).click(function (event) {
       event.preventDefault();
       var img_src = $(this).attr('href');
-      $('#modal').addClass('pop_open');
+      $('#modal').fadeIn();
       $('#modal img').attr('src', img_src); // $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
     });
   });
   $("#modal button,#modal").click(function () {
-    $("#modal").removeClass();
+    $("#modal").fadeOut();
   }); // 팝업 끝
 
   $('.non_act').click(function () {
     return false;
   });
-});
+}); // $(function(){
+// 	$('.popup_a').each(function () {
+// 		$(this).click(function (event) {
+// 			event.preventDefault()
+// 			var img_src = $(this).attr('href');
+// 			$('#modal').addClass('pop_open');
+// 			$('#modal img').attr('src', img_src);.
+// 			// $('#modal .txt').text(img_src); 글씨를 추가하고싶을때(제목)
+// 		})
+// 	})
+// 	$("#modal button,#modal").click(function () {
+// 		$("#modal").removeClass();
+// 	});
+// 	// 팝업 끝
+// 	$('.non_act').click(function () {
+// 		return false;
+// 	});
+// })
