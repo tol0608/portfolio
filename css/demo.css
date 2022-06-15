@@ -1296,6 +1296,12 @@ Author E-mail: naimlasker@gmail.com
 	top: 60%;
 }
 
+.blog_post .detali_page {
+	position: absolute;
+	left: -26%;
+	top: 60%;
+}
+
 .blog_post .primary_btn:hover {
 	background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
 	border: 2px solid #854fee;
@@ -1399,6 +1405,12 @@ Author E-mail: naimlasker@gmail.com
 		left: -26%;
 		top: 40%;
 	}
+
+	.blog_post .detail_page {
+		position: absolute;
+		left: -26%;
+		top: 40%;
+	}
 }
 
 @media (max-width: 991px) {
@@ -1409,6 +1421,12 @@ Author E-mail: naimlasker@gmail.com
 	}
 	
 	.blog_post .style_guide {
+		position: absolute;
+		left: -26%;
+		top: 60%;
+	}
+
+	.blog_post .detail_page {
 		position: absolute;
 		left: -26%;
 		top: 60%;
@@ -1431,6 +1449,14 @@ Author E-mail: naimlasker@gmail.com
 		font-size: 1rem;
 		padding: 0px 5px;
 	}
+
+	.blog_post .detail_page {
+		position: absolute;
+		left: 5%;
+		top: -25%;
+		font-size: 1rem;
+		padding: 0px 5px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -1444,6 +1470,12 @@ Author E-mail: naimlasker@gmail.com
 	}
 	
 	.blog_post .style_guide {
+		position: relative;
+		font-size: 0.3rem;
+		padding: 0px 5px;
+	}
+
+	.blog_post .detail_page {
 		position: relative;
 		font-size: 0.3rem;
 		padding: 0px 5px;
