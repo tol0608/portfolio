@@ -1437,7 +1437,7 @@ Author E-mail: naimlasker@gmail.com
 	.blog_post .primary_btn {
 		position: absolute;
 		left: 5%;
-		top: -15%;
+		top: -25%;
 		font-size: 1rem;
 		padding: 0px 5px;
 	}
@@ -1445,7 +1445,7 @@ Author E-mail: naimlasker@gmail.com
 	.blog_post .style_guide {
 		position: absolute;
 		left: 5%;
-		top: -25%;
+		top: -15%;
 		font-size: 1rem;
 		padding: 0px 5px;
 	}
@@ -1453,8 +1453,31 @@ Author E-mail: naimlasker@gmail.com
 	.blog_post .detail_page {
 		position: absolute;
 		left: 5%;
-		top: -25%;
+		top: -15%;
 		font-size: 1rem;
+		padding: 0px 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	.content .info {
+		font-size: 1.3rem;
+	}
+	.blog_post .primary_btn {
+		position: relative;
+		font-size: 0.3rem;
+		padding: 0px 5px;
+	}
+	
+	.blog_post .style_guide {
+		position: relative;
+		font-size: 0.3rem;
+		padding: 0px 5px;
+	}
+
+	.blog_post .detail_page {
+		position: relative;
+		font-size: 0.3rem;
 		padding: 0px 5px;
 	}
 }
