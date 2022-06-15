@@ -1235,6 +1235,7 @@ Author E-mail: naimlasker@gmail.com
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
 
+
 .portfolio_area .main_title h2 {
 	font-family: 'Gmarket_sans';
 	font-weight: 600;
@@ -1316,6 +1317,7 @@ Author E-mail: naimlasker@gmail.com
 
 .blog_details h2 {
 	cursor: default;
+	font-size: 1.5rem;
 }
 
 .blog_details h2:hover {
@@ -1480,6 +1482,7 @@ Author E-mail: naimlasker@gmail.com
 		font-size: 0.3rem;
 		padding: 0px 5px;
 	}
+
 }
 
 @media (max-width: 320px) {
