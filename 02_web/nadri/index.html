@@ -46,11 +46,11 @@
                             </p>
                         </div>
 
-                        <button class="btn_all">
+                        <!-- <button class="btn_all">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </button>
+                        </button> -->
                     </div>
 
                 </div>
@@ -115,24 +115,26 @@
         </section>
         <section id="sec1">
             <div class="inner">
-                <form>
-                    <table class="sec1_search" border="1">
-                        <tr>
-                            <td>키워드</td>
-                            <td colspan="2"><input type="text" name="keywordsearch"></td>
-                            <td rowspan="3"><input type="submit" name="submit" value="제출"></td>
-                        </tr>
-                        <tr>
-                            <td>지역별</td>
-                            <td><input type="text" name="allstate" placeholder="전체/시"></td>
-                            <td><input type="text" name="allcity" placeholder="전체/구·군"></td>
-                        </tr>
-                        <tr>
-                            <td>테마별</td>
-                            <td colspan="2"><input type="text" name="allthema" placeholder="전체테마"></td>
-                        </tr>
-                    </table>
-                </form>
+                <div class="sec1_title">
+                    <h2>경북 방방곡곡</h2>
+                    <p>어떤 여행이 기다리고 있을까요?</p>
+                </div>
+                <div class="sec1_search">
+                    <div class="sec1_search2">
+                        <p>키워드</p>
+                        <div class="search_boxline"><input type="text" class="search_box"></div>
+                    </div>
+                    <div class="sec1_search2">
+                        <p>지역별</p>
+                        <div class="search_boxline contry_1"><input type="text" placeholder="전체 / 시" class="search_box2"></div>
+                        <div class="search_boxline contry_2"><input type="text" placeholder="전체 / 구·군" class="search_box2"></div>
+                    </div>
+                    <div class="sec1_search2">
+                        <p>테마별</p>
+                        <div class="search_boxline"><input type="text" placeholder="전체 테마" class="search_box"></div>
+                    </div>
+                    <button>검색</button>
+                </div>
                 <!-- 테이블 만드는건 나중에... -->
             </div>
         </section>
