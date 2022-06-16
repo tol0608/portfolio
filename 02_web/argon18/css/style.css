@@ -94,6 +94,7 @@ h1 {
     padding: 25px 23px;
     box-sizing: border-box;
     display: none;
+    cursor: pointer;
 }
 
 #header .zoom {
