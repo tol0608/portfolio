@@ -447,7 +447,7 @@ input::-moz-placeholder {
     position: absolute;
     transform: translate(0, 0);
     top: 48%;
-    right: 16%;
+    right: 21%;
     transition: 0.4s;
 }
 
