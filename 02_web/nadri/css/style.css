@@ -46,7 +46,6 @@ h1 {
     margin: 20px 0;
 }
 
-
 /* nav */
 #header nav {
     position: relative;
@@ -241,6 +240,7 @@ h1 {
     transform: translate(0, 15px);
     padding: 5px 10px 5px 45px;
     margin: 20px 20px;
+    cursor: pointer;
 }
 
 #header #language_select {
@@ -267,6 +267,7 @@ h1 {
     transform: translate(0, 15px);
     font-size: 0;
     margin: 22px 0px;
+    cursor: pointer;
 }
 
 #header .zoom_input {
@@ -569,20 +570,27 @@ input::-moz-placeholder {
 #sec3 .inner {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+    height: 1000px;
 }
 
 #sec3 .sec3_left,
 #sec3 .sec3_right {
-    width: 50%;
+    width: 100%;
     overflow: hidden;
     margin: 0;
 }
 
+#sec3 .sec3_left .sec3_insta{
+    height: 100%;
+}
+
 #sec3 h4 {
-    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 #sec3 .img {
@@ -626,10 +634,13 @@ input::-moz-placeholder {
 
 #sec3 .sec3_left img,
 #sec3 .sec3_right img {
+    width: 100%;
     max-width: 600px;
     max-height: 600px;
     margin-bottom: 100px;
     position: relative;
+    object-fit: scale-down;
+    /* object-position: center; */
 }
 
 #sec3 .insta_footer,
